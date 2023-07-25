@@ -1,0 +1,40 @@
+.switch-core {
+  appearance: none;
+}
+
+.switch {
+  display: flex;
+  flex-direction: row;
+  width: 40px;
+  height: 22px;
+  cursor: pointer;
+
+  border-radius: 50px;
+  background-color: rgb(158, 171, 255);
+}
+
+.switch:hover {
+  background-color: rgb(158, 231, 255);
+  transition: 0.5s ease-in-out;
+}
+
+.switch-ball {
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50px;
+  margin: auto 3px;
+
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s ease-in-out;
+}
+
+.switch-core:checked ~ .switch-ball {
+  margin: auto 0 auto 20px;
+  transition: 0.3s ease-in-out;
+}
+
+/* <label for="switcher" class="switch">
+<input type="checkbox" class="switch-core" id="switcher" />
+<div class="switch-ball"></div>
+</label> */
